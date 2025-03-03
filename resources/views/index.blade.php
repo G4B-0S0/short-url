@@ -10,13 +10,13 @@
 <body>
     
     <main class="container mx-auto p-4 content-center">
-        <div class="form grid grid-cols-3 gap-4 mb-10">
-            <div></div>
+        <div class="form grid grid-cols-1 gap-4 mb-10 lg:grid-cols-3">
+            <div class="hidden lg:block"></div>
             <div>
                 <h1 class="text-4xl text-center mb-4">URL Shortener</h1>
                 <x-form />
             </div>
-            <div></div>
+            <div class="hidden lg:block"></div>
         </div>
 
     <div class="url-results">
