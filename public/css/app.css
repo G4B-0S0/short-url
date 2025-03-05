@@ -1,0 +1,6 @@
+/* ---- particles.js container ---- */
+#particles-js {
+    /* background-color: #ffffff; */
+    background-image: url("");
+    background-position: 50% 50%;
+  }
