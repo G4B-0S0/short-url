@@ -1,11 +1,12 @@
 <?php
 
-use App\Http\Controllers\UrlController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ShortUrlController;
 
 Route::get('/', function () {
     return view('index');
 });
 
-Route::post('/acortar', [UrlController::class, 'acortarUrl']);
-Route::get('/{codigo}', [UrlController::class, 'redirigir']);
+Route::get('/short', [ShortUrlController::class, 'store'])->name('short.url');
+
+Route::get('/{code}', [ShortUrlController::class, 'redirect'])->name('short.url.redirect');
